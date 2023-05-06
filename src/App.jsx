@@ -12,6 +12,7 @@ const Container = styled.div`
     //this is only working on the firefox browser - hiding scrollbar
     scrollbar-width: none;
     color: white;
+    background: url("./img/background.jpg");
     //below code will make it run in every browser
     &::-webkit-scrollbar{
         display: none;
