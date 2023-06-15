@@ -72,7 +72,7 @@ const Navbar = () => {
                     </Icons>
             </Container>
         </Section>
-    )
-}
+    );
+};
 
 export default Navbar

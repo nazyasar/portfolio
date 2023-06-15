@@ -9,6 +9,7 @@ const Section = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    background-color: #b38bf8;
 `;
 
 const Container = styled.div`
@@ -20,7 +21,7 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
-    flex:2;
+    flex: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +29,7 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-    font-size: 74px;
+    font-size: 64px;
 `;
 
 const WhatWeDo = styled.div`
@@ -38,7 +39,7 @@ const WhatWeDo = styled.div`
 `;
 
 const Line = styled.img`
-    height: 40px;
+    height: 20px;
 `;
 
 const Subtitle = styled.h2`
@@ -92,24 +93,24 @@ const Img = styled.img`
 const Hero = () => {
     return (
         <Section>
-            <Navbar/>
+            <Navbar />
             <Container>
                 <Left>
                     <Title>Naz Yasar - Full Stack Software Developer</Title>
                     <WhatWeDo>
-                        <Line src="./img/code.png"/>
-                            <Subtitle>I'm a software developer </Subtitle>
-                            </WhatWeDo>
-                        <Desc>lorem ipsum</Desc>
-                        <Button> Learn more</Button>
+                        <Line src="./img/code.png" />
+                        <Subtitle>I'm a software developer </Subtitle>
+                    </WhatWeDo>
+                    <Desc>lorem ipsum</Desc>
+                    <Button> Learn more</Button>
                 </Left>
                 <Right>
                     {/* 3d model */}
-                    <Img src="./img/main.jpg"/>
+                    {/* <Img src="./img/main.jpg"/> */}
                 </Right>
             </Container>
         </Section>
-    )
-}
+    );
+};
 
 export default Hero
