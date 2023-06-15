@@ -13,7 +13,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-    height: 100px;
+    height: 100%;
     scroll-snap-align: center;
     width: 1400px;
     display: flex;
@@ -29,7 +29,7 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-    font-size: 64px;
+    font-size: 24px;
 `;
 
 const WhatWeDo = styled.div`
@@ -63,9 +63,10 @@ const Button = styled.button`
 `;
 
 const Right = styled.div`
-    flex:3;
+    flex: 3;
     position: relative;
-    background-color: yellow;
+    // right section on the main page, you can put color on the back of the animation
+    /* background-color: yellow; */
 `;
 
 const Img = styled.img`
@@ -101,12 +102,14 @@ const Hero = () => {
                         <Line src="./img/code.png" />
                         <Subtitle>I'm a software developer </Subtitle>
                     </WhatWeDo>
-                    <Desc>lorem ipsum</Desc>
+                    <Desc>
+                        lorem ipsum
+                    </Desc>
                     <Button> Learn more</Button>
                 </Left>
                 <Right>
                     {/* 3d model */}
-                    {/* <Img src="./img/main.jpg"/> */}
+                    <Img src="./img/main.jpg"/>
                 </Right>
             </Container>
         </Section>
